@@ -39,6 +39,12 @@ namespace KnyguKlase
         public string Salis { get => salis; set => salis = value; }
         public decimal Kaina { get => kaina; set => kaina = value; }
 
+        public override string ToString()
+        {
+            string tekstas = "isbn: " + isbn + "; pavadinimas: " + pavadinimas + "; autorius: " + autorius + "; leidimo metai: " + leidimoMetai + "; leidėjas: " + leidejas + "; šalis: " + salis + "; kaina: " + kaina ;
+            return tekstas;
+        }
+
     }
 
 }

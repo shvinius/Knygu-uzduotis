@@ -1,0 +1,15 @@
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\obj\Debug\net6.0\KnyguKlase.csproj.AssemblyReference.cache
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\obj\Debug\net6.0\KnyguKlase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\obj\Debug\net6.0\KnyguKlase.AssemblyInfoInputs.cache
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\obj\Debug\net6.0\KnyguKlase.AssemblyInfo.cs
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\obj\Debug\net6.0\KnyguKlase.csproj.CoreCompileInputs.cache
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\bin\Debug\net6.0\KnyguKlase.exe
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\bin\Debug\net6.0\KnyguKlase.deps.json
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\bin\Debug\net6.0\KnyguKlase.runtimeconfig.json
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\bin\Debug\net6.0\KnyguKlase.dll
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\bin\Debug\net6.0\KnyguKlase.pdb
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\obj\Debug\net6.0\KnyguKlase.dll
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\obj\Debug\net6.0\refint\KnyguKlase.dll
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\obj\Debug\net6.0\KnyguKlase.pdb
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\obj\Debug\net6.0\KnyguKlase.genruntimeconfig.cache
+C:\Users\Paulius\Documents\VZ programavimas\C sharp\sesta pamoka knygu klase\1 uzduotis\KnyguKlase\obj\Debug\net6.0\ref\KnyguKlase.dll
