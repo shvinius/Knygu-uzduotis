@@ -13,15 +13,24 @@ namespace KnyguKlase
 
             Console.WriteLine(knyga.ToString());
 
-            Console.WriteLine("------------");
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Išvestas knygų sarašas: ");
 
             List<Knyga> knygos = NuskaitoKnygasIsFailo();
 
             IsvestiVisasKnygas(knygos);
 
-            Console.WriteLine("------------");
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Visų knygų pavadinimai: ");
              
             IsvestiVisuKnyguPavadinimus(knygos);
+
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Knygų kainų vidurkis: ");
+            Console.WriteLine(KnyguKainuVidurkis(knygos));
         }
         /// <summary>
         /// Nuskaito visas knygas iš tekstinio failo (naudojant dar papildomą konvertavimo eilutės į Knygos funkciją)
@@ -73,13 +82,28 @@ namespace KnyguKlase
         /// <summary>
         /// Išvedu iš knygos sarašo visų knygų pavadinimus
         /// </summary>
-        /// <param name="listas"></param>
-        static void IsvestiVisuKnyguPavadinimus(List<Knyga> listas)
+        /// <param name="knygos"></param>
+        static void IsvestiVisuKnyguPavadinimus(List<Knyga> knygos)
         {
-            foreach(Knyga elementas in listas)
+            foreach(Knyga knyga in knygos)
             {
-                Console.WriteLine(elementas.Pavadinimas);
+                Console.WriteLine(knyga.Pavadinimas);
             }
         }
+        static decimal KnyguSuma(List<Knyga> knygos)
+        {
+            decimal knyguSuma = 0;
+            foreach(Knyga knyga in knygos)
+            {
+                knyguSuma += knyga.Kaina;
+            }
+            return knyguSuma;
+        }
+        static double KnyguKainuVidurkis(List<Knyga> knygos)
+        {
+            double knyguVidurkis;
+            knyguVidurkis = (double) KnyguSuma(knygos) / knygos.Count;
+            return knyguVidurkis;
+        }
     }
-}
+} 
