@@ -13,6 +13,7 @@ namespace KnyguKlase
 
             Console.WriteLine(knyga.ToString());
 
+
             Console.WriteLine("--------------------------------------------------------------------------------------------");
 
             Console.WriteLine("Išvestas knygų sarašas: ");
@@ -31,6 +32,17 @@ namespace KnyguKlase
 
             Console.WriteLine("Knygų kainų vidurkis: ");
             Console.WriteLine(KnyguKainuVidurkis(knygos));
+
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Iš sarašo surasta seniausia knyga: ");
+            Knyga seniausiaKnyga = SeniausiaKnyga(knygos);
+            Console.WriteLine(seniausiaKnyga.ToStringPavadinimas() + seniausiaKnyga.ToStringKaina() + seniausiaKnyga.ToStringLeidimoMetai());
+
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Atpigintos knygos kurios išleistos anksčiau nei 1960m.: ");
+            AtpigintuKnygaKuriIsleistaAnksciau1960(knygos);
         }
         /// <summary>
         /// Nuskaito visas knygas iš tekstinio failo (naudojant dar papildomą konvertavimo eilutės į Knygos funkciją)
@@ -87,9 +99,14 @@ namespace KnyguKlase
         {
             foreach(Knyga knyga in knygos)
             {
-                Console.WriteLine(knyga.Pavadinimas);
+                Console.WriteLine(knyga.ToStringPavadinimas());
             }
         }
+        /// <summary>
+        /// Suskaičiuoju knygų kainų sumą.
+        /// </summary>
+        /// <param name="knygos"></param>
+        /// <returns>Grąžina kainų sumą</returns>
         static decimal KnyguSuma(List<Knyga> knygos)
         {
             decimal knyguSuma = 0;
@@ -99,11 +116,46 @@ namespace KnyguKlase
             }
             return knyguSuma;
         }
+        /// <summary>
+        /// Suskaičiuoju kainų vidurkį
+        /// </summary>
+        /// <param name="knygos"></param>
+        /// <returns>Grąžina kainų vidurkį</returns>
         static double KnyguKainuVidurkis(List<Knyga> knygos)
         {
             double knyguVidurkis;
             knyguVidurkis = (double) KnyguSuma(knygos) / knygos.Count;
             return knyguVidurkis;
+        }
+        /// <summary>
+        /// Ieškau seniausios knygos iš sarašo
+        /// </summary>
+        /// <param name="knygos"></param>
+        /// <returns></returns>
+        static Knyga SeniausiaKnyga (List<Knyga> knygos)
+        {
+            Knyga seniausiaKnyga = knygos[0];
+            foreach (Knyga knyga in knygos)
+            {
+                if (knyga.LeidimoMetai < seniausiaKnyga.LeidimoMetai)
+                {
+                    seniausiaKnyga = knyga;
+                }
+            }
+            return seniausiaKnyga;
+        }
+        static void AtpigintuKnygaKuriIsleistaAnksciau1960 (List<Knyga> knygos)
+        {
+            
+            foreach (Knyga knyga in knygos)
+            {
+                if (knyga.LeidimoMetai < 1960)
+                {
+                    knyga.KainaPerPuse();
+                    Console.WriteLine(knyga);
+
+                }
+            }
         }
     }
 } 
