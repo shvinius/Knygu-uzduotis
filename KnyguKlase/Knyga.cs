@@ -64,8 +64,10 @@ namespace KnyguKlase
             kaina = kaina / 2;
 
         }   
-
-
+        public void KainaSumazintaProcentais()
+        {
+            
+        }
     }
 
 }

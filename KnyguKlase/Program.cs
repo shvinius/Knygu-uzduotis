@@ -43,6 +43,12 @@ namespace KnyguKlase
 
             Console.WriteLine("Atpigintos knygos kurios išleistos anksčiau nei 1960m.: ");
             AtpigintuKnygaKuriIsleistaAnksciau1960(knygos);
+
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+
+            Console.WriteLine("Atpigintos knygos kurios išleistos anksčiau nei X metai: ");
+            AtpigintuXmetai(knygos, 1940);
+
         }
         /// <summary>
         /// Nuskaito visas knygas iš tekstinio failo (naudojant dar papildomą konvertavimo eilutės į Knygos funkciją)
@@ -153,9 +159,23 @@ namespace KnyguKlase
                 {
                     knyga.KainaPerPuse();
                     Console.WriteLine(knyga);
-
                 }
             }
         }
+        static void AtpigintuXmetai(List<Knyga> knygos, int x)
+        { 
+            foreach (Knyga knyga in knygos)
+            {
+                if (knyga.LeidimoMetai <  x)
+                {
+                    knyga.KainaPerPuse();
+                    Console.WriteLine(knyga);
+                }
+
+            }
+                
+
+        }   
+
     }
 } 
